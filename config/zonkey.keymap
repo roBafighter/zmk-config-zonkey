@@ -230,10 +230,10 @@
 
         layer3 {
             bindings = <
-&kp N1  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &kp N5                                           &mo6    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
-&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans               &trans              &trans  &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans           &trans          &trans              &trans               &trans              &trans  &trans  &trans           &trans          &trans           &trans
-&trans  &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)            &trans  &trans                                                    &trans
+&trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &trans                                           &mo6                &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
+&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans               &trans              &trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)
+&trans  &trans           &trans          &trans              &trans               &trans              &trans  &trans              &trans           &trans          &trans           &trans
+&trans  &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)            &trans              &trans                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
