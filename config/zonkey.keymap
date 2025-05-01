@@ -208,10 +208,10 @@
 
         layer_1 {
             bindings = <
-&kp JP_HANZEN  &trans  &trans  &trans            &trans                                                    &trans         &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp MINUS
-&kp TAB        &trans  &trans  &trans            &trans       &trans                &kp RIGHT_PARENTHESIS  &trans         &kp DOLLAR       &kp PERCENT           &kp CARET              &kp EQUAL
-&trans         &trans  &trans  &trans            &trans       &trans                &kp LEFT_PARENTHESIS   &kp AMPERSAND  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &moH
-&mt LCTL ESC   &trans  &trans  &lt 2 INT_HENKAN  &lt 6 SPACE  &lt 1 INT_MUHENKAN                           &trans         &trans                                                                   &moI
+&kp LS(LG(N5))  &trans  &trans  &trans            &trans                                                    &trans         &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp MINUS
+&kp TAB         &trans  &trans  &trans            &trans       &trans                &kp RIGHT_PARENTHESIS  &trans         &kp DOLLAR       &kp PERCENT           &kp CARET              &kp EQUAL
+&trans          &trans  &trans  &trans            &trans       &trans                &kp LEFT_PARENTHESIS   &kp AMPERSAND  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &moH
+&mt LCTL ESC    &trans  &trans  &lt 2 INT_HENKAN  &lt 6 SPACE  &lt 1 INT_MUHENKAN                           &trans         &trans                                                                   &moI
             >;
 
             sensor-bindings = <&scroll_up_down>;
