@@ -197,7 +197,7 @@
             bindings = <
 &kp Q      &kp W             &kp E             &kp R             &kp T                                                       &kp Y          &kp U        &kp I      &kp O    &kp P
 &kp A      &kp S             &kp D             &kp F             &kp G             &kp LG(K_MUTE)            &kp MINUS       &kp H          &kp J        &kp K      &kp L    &kp SEMICOLON
-&to 4      &mt LEFT_SHIFT Z  &kp X             &kp C             &kp V             &kp B                     &kp LEFT_SHIFT  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&to 5      &mt LEFT_SHIFT Z  &kp X             &kp C             &kp V             &kp B                     &kp LEFT_SHIFT  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp LCTRL  &kp LEFT_ALT      &kp LEFT_COMMAND  &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1  &mt LEFT_COMMAND SPACE                    &kp BACKSPACE  &lt 3 ENTER                                        &lt 6 DELETE
             >;
 
@@ -219,10 +219,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                        &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N0                      &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans    &mt LEFT_SHIFT KP_NUMBER_0  &kp N7     &kp N8        &kp N9        &kp PERIOD    &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans     &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N7                      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans    &mt LEFT_SHIFT KP_NUMBER_0  &kp N8        &kp N9        &kp COMMA     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans        &trans                                                                   &kp EQUAL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -230,10 +230,21 @@
 
         layer3 {
             bindings = <
-&trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &trans                                           &mo6                &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
-&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans               &trans              &trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)
-&trans  &trans           &trans          &trans              &trans               &trans              &trans  &trans              &trans           &trans          &trans           &trans
-&trans  &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)            &trans              &trans                                                                 &trans
+&trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &trans                                                  &kp LC(UP_ARROW)    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
+&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans               &trans              &kp LG(LS(T))  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)
+&trans  &trans           &trans          &trans              &trans               &trans              &kp LG(LS(N))  &kp LG(T)           &trans           &trans          &trans           &trans
+&trans  &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)                   &trans              &trans                                                                 &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        MOUSE {
+            bindings = <
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &kp R          &kp T                                              &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans           &to_layer_0 MINUS  &to_layer_0 H  &mkp MB1       &mkp MB3       &mkp MB2            &to_layer_0 SEMICOLON
+&to 5          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B    &trans             &to_layer_0 N  &mkp MB4       &mkp MB5       &to_layer_0 PERIOD  &to_layer_0 SLASH
+&trans         &trans         &trans         &trans         &trans         &trans                              &trans         &trans                                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -247,26 +258,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&to 4   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Bluetooth {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans        &trans    &trans       &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &trans         &trans         &trans         &trans         &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans                 &trans         &trans                                                      &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&trans        &trans        &trans        &trans        &bt BT_CLR    &trans            &trans       &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+&trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL    &bootloader  &trans         &trans         &trans         &trans         &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &trans                         &trans         &trans                                                      &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_up_down>;
