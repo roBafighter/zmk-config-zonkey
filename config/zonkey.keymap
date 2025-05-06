@@ -49,21 +49,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        mkp_exit_AML: mkp_exit_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&sl 4>;
-
-            label = "MKP_EXIT_AML";
-        };
     };
 
     behaviors {
@@ -223,10 +208,10 @@
 
         layer_1 {
             bindings = <
-&kp LS(LG(N5))  &trans  &trans    &trans            &trans                                                &kp PLUS       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp MINUS
-&kp TAB         &trans  &kp SEMI  &kp COLON         &kp EQUAL    &trans                &kp RIGHT_BRACKET  &kp COLON      &kp DOLLAR       &kp PERCENT           &kp CARET              &kp EQUAL
-&trans          &trans  &trans    &trans            &trans       &trans                &kp LEFT_BRACKET   &kp AMPERSAND  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &moH
-&mt LCTL ESC    &trans  &trans    &lt 2 INT_HENKAN  &lt 6 SPACE  &lt 1 INT_MUHENKAN                       &trans         &trans                                                                   &moI
+&kp LS(LG(N5))  &trans  &trans  &trans            &trans                                                &kp PLUS       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp MINUS
+&kp TAB         &trans  &trans  &trans            &trans       &trans                &kp RIGHT_BRACKET  &kp COLON      &kp DOLLAR       &kp PERCENT           &kp CARET              &kp EQUAL
+&trans          &trans  &trans  &trans            &trans       &trans                &kp LEFT_BRACKET   &kp AMPERSAND  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &moH
+&mt LCTL ESC    &trans  &trans  &lt 2 INT_HENKAN  &lt 6 SPACE  &lt 1 INT_MUHENKAN                       &trans         &trans                                                                   &moI
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -245,10 +230,10 @@
 
         layer3 {
             bindings = <
-&trans  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &trans                                                  &kp LC(UP_ARROW)    &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
-&trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans               &trans              &kp LG(LS(T))  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)
-&trans  &trans           &trans          &trans              &trans               &trans              &kp LG(LS(N))  &kp LG(T)           &trans           &trans          &trans           &trans
-&trans  &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)                   &trans              &trans                                                                 &trans
+&kp ESCAPE  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)         &trans                                           &mo6                &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &mo0
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp END              &trans              &trans  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(RIGHT_ARROW)
+&trans      &trans           &trans          &trans              &trans               &trans              &trans  &trans              &trans           &trans          &trans           &trans
+&trans      &trans           &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)            &trans              &trans                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -285,6 +270,15 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
+            >;
         };
     };
 };
