@@ -195,10 +195,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W         &kp E             &kp R             &kp T                                                       &kp Y          &kp U        &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D             &kp F             &kp G             &kp LG(K_MUTE)            &kp MINUS       &kp H          &kp J        &kp K      &kp L    &kp SEMICOLON
-&kp LSHIFT  &kp Z         &kp X             &kp C             &kp V             &kp B                     &kp LEFT_SHIFT  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LCTRL   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1  &mt LEFT_COMMAND SPACE                    &kp BACKSPACE  &lt 3 ENTER                                        &lt 4 DELETE
+&kp Q           &kp W         &kp E             &kp R             &kp T                                                       &kp Y          &kp U        &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D             &kp F             &kp G             &kp LG(K_MUTE)            &kp MINUS       &kp H          &kp J        &kp K      &kp L    &kp SEMICOLON
+&mt LSHIFT TAB  &kp Z         &kp X             &kp C             &kp V             &kp B                     &kp LEFT_SHIFT  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL       &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1  &mt LEFT_COMMAND SPACE                    &kp BACKSPACE  &lt 3 ENTER                                        &lt 4 DELETE
             >;
 
             sensor-bindings =
@@ -265,7 +265,7 @@
             bindings = <
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &kp R          &kp T                                              &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I  &to_layer_0 O       &lt 5 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans           &to_layer_0 MINUS  &to_layer_0 H  &mkp MB1       &mkp MB3       &mkp MB2            &to_layer_0 SEMICOLON
-&to 5          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B    &trans             &to_layer_0 N  &mkp MB4       &mkp MB5       &to_layer_0 PERIOD  &to_layer_0 SLASH
+&lt 5 TAB      &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B    &trans             &to_layer_0 N  &mkp MB4       &mkp MB5       &to_layer_0 PERIOD  &to_layer_0 SLASH
 &trans         &trans         &trans         &trans         &trans         &trans                              &trans         &trans                                                                   &trans
             >;
 
