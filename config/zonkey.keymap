@@ -49,6 +49,7 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -233,10 +234,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N7                      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &mt LEFT_SHIFT KP_NUMBER_0  &kp N8        &kp N9        &kp COMMA     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans        &trans                                                                   &kp EQUAL
+&trans              &trans               &trans                  &trans                &trans                                                         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
+&trans              &trans               &trans                  &trans                &trans                   &trans    &kp N7                      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
+&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans    &mt LEFT_SHIFT KP_NUMBER_0  &kp N8        &kp N9        &kp COMMA     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans              &trans               &trans                  &trans                &trans                   &trans                                &trans        &trans                                                                   &kp EQUAL
             >;
 
             sensor-bindings = <&scroll_up_down>;
