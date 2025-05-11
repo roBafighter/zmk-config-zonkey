@@ -206,10 +206,10 @@
 
         layer_1 {
             bindings = <
-&kp JP_HANZEN   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
-&kp LG(LS(N5))  &kp TAB         &kp LS(TAB)      &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
-&kp LEFT_SHIFT  &trans          &trans           &trans            &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&mt LCTL ESC    &trans          &trans           &lt 5 INT_HENKAN  &lt 4 SPACE        &lt 1 INT_MUHENKAN                       &trans           &trans                                                                &kp TILDE
+&kp JP_HANZEN   &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
+&kp LG(LS(N5))  &kp TAB             &kp LS(TAB)          &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
+&kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans            &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&mt LCTL ESC    &trans              &trans               &lt 5 INT_HENKAN  &lt 4 SPACE        &lt 1 INT_MUHENKAN                       &trans           &trans                                                                &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
@@ -217,10 +217,10 @@
 
         layer_2 {
             bindings = <
-&kp N1  &mo2    &kp N3  &kp N4            &kp N5                                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
-&trans  &trans  &trans  &trans            &trans       &trans                &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
-&trans  &trans  &trans  &trans            &trans       &trans                &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans  &lt 0 INT_HENKAN  &lt 2 SPACE  &lt 4 INT_MUHENKAN               &trans        &trans                                                                   &kp DOLLAR
+&kp N1  &mo2                &kp LS(UP_ARROW)    &kp N4               &kp N5                                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
+&trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans                &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
+&trans  &trans              &trans              &trans               &trans       &trans                &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans              &trans              &lt 0 INT_HENKAN     &lt 2 SPACE  &lt 4 INT_MUHENKAN               &trans        &trans                                                                   &kp DOLLAR
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
