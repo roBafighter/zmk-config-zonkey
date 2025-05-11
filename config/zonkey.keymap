@@ -206,7 +206,7 @@
 
         layer_1 {
             bindings = <
-&kp JP_HANZEN   &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
+&kp GLOBE       &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
 &kp LG(LS(N5))  &kp TAB             &kp LS(TAB)          &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
 &kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans            &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &mt LCTL ESC    &trans              &trans               &lt 5 INT_HENKAN  &lt 4 SPACE        &lt 1 INT_MUHENKAN                       &trans           &trans                                                                &kp TILDE
@@ -217,7 +217,7 @@
 
         layer_2 {
             bindings = <
-&kp N1  &mo2                  &kp LS(UP_ARROW)        &kp N4                  &kp N5                                                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
+&kp N1  &kp F2                &kp LS(UP_ARROW)        &kp N4                  &kp N5                                                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
 &trans  &kp LS(LEFT_ARROW)    &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)     &trans                   &trans                &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
 &trans  &kp LG(LA(UP_ARROW))  &kp LS(LG(DOWN_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans                &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans  &trans                &trans                  &lt 0 INT_HENKAN        &lt 2 SPACE              &lt 4 INT_MUHENKAN               &trans        &trans                                                                   &kp DOLLAR
@@ -228,10 +228,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE     &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW            &kp LA(LG(RIGHT_ARROW))  &kp F5                                                      &kp F6              &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW    &kp LG(LA(RIGHT_ARROW))  &kp F10
-&kp HOME       &kp LEFT_ARROW          &kp DOWN_ARROW          &kp RIGHT_ARROW          &kp END                  &trans              &kp LG(W)      &kp LC(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp LC(RIGHT_ARROW)
-&kp LA(LC(E))  &kp LC(LA(G))           &kp LA(LC(LEFT_ARROW))  &kp LA(LC(ENTER))        &kp LA(LC(RIGHT_ARROW))  &trans              &kp LG(LS(N))  &kp LG(T)           &kp LG(LS(T))           &trans          &trans                   &trans
-&trans         &trans                  &trans                  &kp LC(LEFT_ARROW)       &kp LC(RIGHT_ARROW)      &kp LC(UP_ARROW)                   &trans              &trans                                                                                &trans
+&kp ESCAPE     &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW            &kp LA(LG(RIGHT_ARROW))  &kp F5                                                      &kp F6              &kp LG(LA(LEFT_ARROW))  &kp UP_ARROW        &kp LG(LA(RIGHT_ARROW))  &kp F10
+&kp HOME       &kp LEFT_ARROW          &kp DOWN_ARROW          &kp RIGHT_ARROW          &kp END                  &trans              &kp LG(W)      &kp LC(LEFT_ARROW)  &kp LEFT_ARROW          &kp DOWN_ARROW      &kp RIGHT_ARROW          &kp LC(RIGHT_ARROW)
+&kp LA(LC(E))  &kp LC(LA(G))           &kp LA(LC(LEFT_ARROW))  &kp LA(LC(ENTER))        &kp LA(LC(RIGHT_ARROW))  &trans              &kp LG(LS(N))  &kp LG(T)           &kp LG(LS(T))           &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)      &trans
+&trans         &trans                  &trans                  &kp LC(LEFT_ARROW)       &kp LC(RIGHT_ARROW)      &kp LC(UP_ARROW)                   &trans              &trans                                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -250,10 +250,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans           &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                          &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
