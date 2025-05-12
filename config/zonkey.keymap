@@ -40,7 +40,21 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -222,8 +236,8 @@
         layer_1 {
             bindings = <
 &kp GLOBE       &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
-&kp LG(LS(N5))  &kp TAB             &kp LS(TAB)          &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
-&kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans            &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp LG(LS(N5))  &kp LS(TAB)         &kp TAB              &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
+&kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(LS(X))     &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &mt LCTL ESC    &trans              &trans               &lt 5 INT_HENKAN  &lt 4 SPACE        &lt 1 INT_MUHENKAN                       &trans           &trans                                                                &kp TILDE
             >;
 
@@ -234,7 +248,7 @@
             bindings = <
 &trans  &kp F2                &kp LS(UP_ARROW)        &trans                  &trans                                                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS              &kp MINUS
 &trans  &kp LS(LEFT_ARROW)    &kp LS(DOWN_ARROW)      &kp LS(RIGHT_ARROW)     &trans                   &trans                &kp N0     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK          &kp SLASH
-&trans  &kp LG(LA(UP_ARROW))  &kp LS(LG(DOWN_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans                &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &kp LG(LS(UP_ARROW))  &kp LS(LG(DOWN_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans                &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans  &trans                &trans                  &lt 0 INT_HENKAN        &lt 2 SPACE              &lt 4 INT_MUHENKAN               &trans        &trans                                                                   &kp DOLLAR
             >;
 
@@ -276,10 +290,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                      &to_layer_0 Y  &to_layer_0 U  &lt_to_layer_0 5 I  &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans           &to_layer_0 MINUS  &to_layer_0 H  &mkp MB1       &mkp MB2            &to_layer_0 L       &to_layer_0 SEMICOLON
-&mo 5          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B    &trans             &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA   &to_layer_0 PERIOD  &to_layer_0 SLASH
-&trans         &trans         &trans         &trans         &trans         &trans                              &trans         &trans                                                                        &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                      &to_layer_0 Y  &to_layer_0 U      &lt_to_layer_0 5 I  &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans           &to_layer_0 MINUS  &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB2   &to_layer_0 L       &to_layer_0 SEMICOLON
+&mo 5          &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B    &trans             &to_layer_0 N  &to_layer_0 M      &to_layer_0 COMMA   &to_layer_0 PERIOD  &to_layer_0 SLASH
+&trans         &trans         &trans         &trans         &trans         &trans                              &trans         &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
