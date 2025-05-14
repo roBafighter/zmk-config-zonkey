@@ -226,7 +226,7 @@
             bindings = <
 &kp Q      &kp W         &kp E             &kp R             &kp T                                                             &kp Y          &kp U        &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D             &kp F             &kp G             &kp K_MUTE                &kp MINUS             &kp H          &kp J        &kp K      &kp L    &kp SEMI
-&mo 5      &kp Z         &kp X             &kp C             &kp V             &kp B                     &mt LEFT_SHIFT TILDE  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mo 5      &kp Z         &kp X             &kp C             &kp V             &kp B                     &mt LEFT_SHIFT EQUAL  &kp N          &kp M        &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1  &mt LEFT_COMMAND SPACE                          &kp BACKSPACE  &lt 3 ENTER                                        &lt 4 DEL
             >;
 
@@ -237,7 +237,7 @@
             bindings = <
 &kp GLOBE       &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp BACKSLASH     &kp PIPE                                                    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PLUS               &kp MINUS
 &kp LG(LS(N5))  &kp LS(TAB)         &kp TAB              &kp APOSTROPHE    &kp DOUBLE_QUOTES  &trans                &kp RIGHT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp ASTRK              &kp SLASH
-&kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(LS(X))     &kp SEMICOLON      &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp LEFT_SHIFT  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(LS(X))     &kp LG(LS(LA(V)))  &kp COLON             &kp LEFT_BRACKET   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &mt LCTL ESC    &trans              &trans               &lt 5 INT_HENKAN  &lt 4 SPACE        &lt 1 INT_MUHENKAN                       &trans           &trans                                                                &kp TILDE
             >;
 
